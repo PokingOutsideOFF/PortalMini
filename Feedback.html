@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<style>
+    .box
+    {
+        margin: 110px 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #0a758f;
+        height:350px;
+        border-radius: 20px;
+    }
+
+    .First > Label
+    {
+        font-size: 20px; 
+        font-family: 'Montserrat', sans-serif; 
+        color:white;
+        margin-right: 5px;
+    }
+
+    .Second
+    {
+        color:white;
+        margin: 20px 25px;
+        vertical-align: middle;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+    }
+
+    .Second > textarea
+    {
+        resize: none;
+        height: 100px;
+        width: 170px;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+    .btn
+    {
+        margin-bottom: 20px;
+        background-color: white;
+        color: gray;
+        padding:15px 20px; 
+        text-align: center;
+        font-size: 18px;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+</style>
+<body style="background-color: #C8D8E4;">
+    <img src="BackImage.jpg" height="100px" width="100px">
+    <form class="box" action="feedback.php" method="post">
+        <p style="font-size:30px; font-family: 'Montserrat', sans-serif; color: white;">Feedback Form</p>
+        <div class="First">
+            <label>Username:</label>
+            <input type="text" name="usrnm">
+        </div>
+        <div class="Second">
+            <label>Feedback:</label>
+            <textarea name="feedback"></textarea>
+        </div>
+        <button class="btn" type="submit">Submit</button>
+    </form>
+</body>
+</html>

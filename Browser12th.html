@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href = "12th.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <title>12th Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@700&display=swap" rel="stylesheet">
+    <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+  crossorigin="anonymous"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+/>
+    <title>Document</title>
+</head>
+<body style="background-color: #C8D8E4;">
+    <img src="BackImage.jpg"  height="100px" width="100px" style="padding: 0;">
+        
+    <div class="header"  style="font-size: 25px;" >
+        <h1>E-GUIDANCE PORTAL </h1>
+    </div>
+    
+    <a href="Login.html" class="button"> Sign-in/Sign-up</a>
+    
+    <div class="topnav" id="myHeader">
+      <a href="Browserhomepage.html">Home</a>
+      <a href="Browser10th.html">10<sup>th</sup> Standard </a>
+      <a class = "active" href = "Browser12th.html">12<sup>th</sup> Standard </a>
+      <a href="Browsermasters.html">Master's</a>
+      <a href="BrowserCollegeList.html">College List</a>
+    </div>
+    
+    <div class = "sidenav">
+         <p><a href = "#Sci">After Science</a></p>
+         <p><a href = "#">After Commerce</a></p>
+         <p><a href = "#">After Arts</a></p>
+    </div>
+    <div class = middle style="padding: 20px;">
+        <p>
+            Selecting a good career opportunity after 12th is a nerve-racking task. The career should be of their interest areas 
+            and it should also fetch a handsome salary. Students pursue their 12th standard in different streams namely Science, 
+            Commerce, and Humanities based on the career fields attract them the most. However, it is imperative to do 
+            comprehensive research on career options after 12th available in their domains which align with their interests too. 
+            We have listed down various career options available in different streams to pursue a bright start to your career. 
+            However, before we go ahead and explore the career opportunities after 12th, we have to make sure that our 12 board 
+            results are on par with the stream that we want to pursue.
+        </p>
+        <p>
+            One needs to plan and apply for admission in a good college/institute based on 12th board result as in the case of 
+            certain fields, your score in Class 12th also determines your eligibility for admission.
+        </p>
+        <h3 style="font-size: 30px;">To view the full article please <a href = Login.html>Login</a>/<a href="Register.html">Register.</a></h3>
+    </div>
+
+    <!--Footer Section-->
+   <div class = "Footer">
+    <footer class="text-lg-center">
+      <b style="font-size: 30px; color: white; font-family: 'M PLUS Code Latin',sans-serif;">E-Guidance Portal</b>
+      <div class="row mt-3">
+        <p>Help us improve by filling the <a href="Login.html" style="color: white;">Feedback form.</a></p>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="Browserhomepage.html"><i class="bi bi-globe"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <p style="color: white;">Contact us: 9657542476, 9345654335</p>
+    </footer>
+  </div>  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
+
+  <script>
+    window.onscroll= function(){myFunction()};
+    var header=document.getElementById("myHeader");
+    var sticky=header.offsetTop;
+    
+    function myFunction(){
+      if(window.pageYOffset > sticky-62){
+       header.classList.add("sticky");
+        
+       }else{
+         header.classList.remove("sticky");
+         document.getElementById("sidebar").style.top="201px";
+       }
+      if(window.pageYOffset>0){
+          document.getElementById("sidebar").style.top="49px";   
+       }
+    }
+
+    
+  </script>
+  
+</body>
+</html>

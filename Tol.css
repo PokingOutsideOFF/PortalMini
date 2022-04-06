@@ -1,0 +1,59 @@
+.box
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.Register-btn
+{
+   background: #286DA8;
+   border:#286DA8;
+   padding: 15px 20px;
+   width: 100%;
+   border: none;
+   cursor: pointer;
+   font-weight: 600;
+   font-size: 18px;
+   font-family: Source Sans Pro,sans-serif;
+}
+
+.Register-btn:hover
+{
+   background-color: #F2F1F0;
+}
+
+.bor
+{  
+   font-family:Source Sans Pro,sans-serif;
+   border: 1px solid #CAD5E2 ;
+   margin-top: 20px;
+   margin-right: 150px;
+   margin-left: 80px;
+   background-color: #0A758F;
+   padding-right: 50px;
+   padding-left: 50px;
+   padding-bottom: 50px;
+   border-radius: 20px;
+}
+
+.input-container {
+   display: flex;
+   width: 100%;
+   margin-bottom: 15px;
+ }
+
+ .icon {
+   padding: 10px;
+   background: white;
+   color: #286DA8;
+   min-width: 50px;
+   text-align: center;
+ }
+
+ .input-field {
+   width: 100%;
+   padding: 10px;
+   outline: none;
+ }

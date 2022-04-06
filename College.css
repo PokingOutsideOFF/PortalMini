@@ -1,0 +1,115 @@
+.header
+{ 
+  display: inline-block;
+  font-family: 'M PLUS Code Latin',sans-serif;
+  color: #286DA8;
+  font-size: 50px;
+  font-weight:bold;
+  padding-left: 450px ; 
+  padding-right: 250px;
+  position: relative;
+  
+}
+
+.topnav{
+    overflow: hidden;
+  background-color: #f2f2f3;
+}
+.topnav a {
+    font-size: 25px;
+    float: left;
+    display:block;
+    color: gray;
+    text-align: center;
+    padding: 10px 0px; 
+    padding-right: 93px ;
+    padding-left: 93px;
+    text-decoration:none;
+  }
+.topnav a:hover 
+{
+    background-color: darkgray;
+    color: black;
+}
+
+.topnav a.active {
+    background-color:#0A758F;
+    color: white;
+  }
+
+
+.button  
+{
+   background-color: white;
+    border: none;
+    color: gray;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    font-family: "Praise";
+    margin-bottom: 6px;
+    margin-left: 100px;
+    cursor:pointer;
+    border-radius: 50px;   
+} 
+  
+.button:hover
+{
+    background-color: darkgray;
+    color: black;
+}
+
+.buttonlinks
+{
+    background-color: white;
+    border: none;
+    color: gray;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 22px;
+    font-family:'Times New Roman', Times, serif;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+
+.content
+{
+    margin-top: 20px;
+    font-weight:bold;
+    font: 200 18px/28px artifakt-element,sans-serif;
+}
+
+.Footer{
+    margin-top: 190px;
+    background-color: #0A758F;
+  }
+  
+  .row{
+    color:white;
+  }
+  
+  .social-links{
+    font-size: 50px;
+  }
+  
+  .bi-instagram {
+    color: #e84396;
+    margin-right: 30px;
+  }
+  
+  .bi-globe {
+    color: #0097e6;
+    margin-right: 30px;
+  }
+  
+  .bi-linkedin {
+    /*color: #176e9c;*/
+      color: #0097e6;
+    
+  }

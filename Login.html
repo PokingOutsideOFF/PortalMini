@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Tol.css">
+        <script src="https://kit.fontawesome.com/c37fd8b07b.js" crossorigin="anonymous"></script>
+        <title>Login Page</title>
+    </head>    
+
+<body style="background-color: #C8D8E4;">
+    <img src="BackImage.jpg"  height="100px" width="100px"/>
+    <div class="box">
+        <div class="bor">
+            <form action="Loginconnect.php" method="post">
+            <h1 style="text-align: center;"> Log In</h1>
+            <!-- <label for="Username" >Username:</label>
+            <input type="text" id="Username" name="username"><br><br>
+            <label for="Password">Password :</label>
+            <input type="password" id="Password" name="password"><br> -->
+                        <div class="input-container">
+                <i class="fa-solid fa-face-smile icon"></i>
+                <input class="input-field" type="text" placeholder="Username" name="usrnm" id="Name">
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input class="input-field" type="password" placeholder="Password" name="psw" id="Password">
+            </div>
+
+            <input type="checkbox" onclick="Toggle()">
+            <b>Show password</b>
+            <br><br>
+            <b>New User? <a href = "Register.html"> Register</a> here.</b>
+            <br><br>
+            <button class="Register-btn" type="submit">Login</button>
+        </form>
+        </div>
+    </div>
+<script>
+    function Toggle() 
+    {
+        var temp = document.getElementById("Password");
+        if (temp.type === "password") 
+        {
+            temp.type = "text";
+        }
+        else 
+        {
+            temp.type = "password";
+        }
+    }
+    
+</script>    
+</body>
+</html>>

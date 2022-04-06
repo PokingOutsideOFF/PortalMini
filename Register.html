@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Tol.css">
+        <title>
+            Registration Page        
+        </title>
+        <script src="https://kit.fontawesome.com/c37fd8b07b.js" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    </head>    
+<body style="background-color: #C8D8E4;">
+    <img src="BackImage.jpg"  height="100px" width="100px"/>
+    <div class="box">
+        <div class="bor">
+            <h1 style="text-align: center;">Register</h1>
+            <form onsubmit="verifyInfo()" action = "Registerconnect.php" method = "post">
+            <!-- <label for="Email Id" >Name:</label>
+            <input type="text" id="Email Id" name="email"><br><br>
+            <label for="Email Id" >Email - Id:</label>
+            <input type="text" id="Email Id" name="email"><br><br>
+            <label for="Username" >Username:</label>
+            <input type="text" id="Username" name="Username"><br><br>
+            <label for="Password" >Password :</label>
+            <input type="password" id="Password" name="Password"><br><br> -->
+                <div class="input-container">
+                    <i class="fa-solid fa-face-smile icon"></i>
+                    <input class="input-field" type="text" placeholder="Username" name="usrnm" id="Name">
+                </div>
+            
+                <!-- For Address if needed -->
+                <!-- <div class="input-container">
+                    <i class="fa-solid fa-house icon"></i>
+                    <input class="input-field" type="text" placeholder="Address" name="quali" id="Qualif">
+                </div> -->
+
+                <div class="input-container">
+                    <i class="fa-solid fa-user-graduate icon"></i>
+                    <input class="input-field" list="grades" placeholder="Qualification" name="quali" id="Qualif">
+                    <datalist id="grades">
+                        <option value="Passed 10th/ below">
+                        <option value="Passed 12th">
+                    </datalist>
+                </div>
+            
+                <div class="input-container">
+                    <i class="fa-solid fa-city icon"></i>
+                    <input class="input-field" type="text" placeholder="City" name="city" id="City">
+                </div> 
+
+                <div class="input-container">
+                    <i class="fa fa-envelope icon"></i>
+                    <input class="input-field" type="text" placeholder="Email" name="email" id="Email Id">
+                </div>
+            
+                <div class="input-container">
+                    <i class="fa fa-key icon"></i>
+                    <input class="input-field" type="password" placeholder="Password" name="psw" id="Password">
+                </div>
+
+                <input type="checkbox" onclick="Toggle()">
+                <b>Show password</b>
+                <br><br>
+                <button class="Register-btn" type="submit">Register</button>
+            </form>
+        </div>
+    
+    <script>
+    function verifyInfo()
+    {
+        var str = new String(document.getElementById("Password").value);
+        var str1 = new String(document.getElementById("Email Id").value);
+        var bool = str.match(/\d/);
+        var bool1 = str.match(/[A-Z]/);
+        var end = str1.substr(-10);
+        var bool2 = str.match(/(@|#)/);
+        let ct = new String(document.getElementById("City").value);
+        if (end != "@gmail.com")
+        {
+            window.alert("Enter proper email id.");
+            return false;
+        }
+
+        if (str.length < 8) 
+        {
+            window.alert("Password length must be at least 8 characters.");
+            return false;
+        }
+
+        if (str.length > 15)
+        {
+            window.alert("Password length must not exceed 15 characters.");
+            return false;
+        }
+       
+        if (!bool)
+        {
+            window.alert("Password must contain at least one digit.");
+            return false;
+        }
+        
+        if (!bool1)
+        {
+            window.alert("Password must contain at least one uppercase alphabet.");
+            return false;
+        }
+
+        if (!bool2)
+        {
+            window.alert("Password must contain at least one special character.");
+            return false;
+        }
+
+        if(!ct)
+        {
+            window.alert("Enter city name.");
+            return false;
+        }
+    }
+    function Toggle() 
+    {
+        var temp = document.getElementById("Password");
+        if (temp.type === "password") {
+            temp.type = "text";
+        }
+        else {
+            temp.type = "password";
+        }
+    }
+    </script>
+</body>
+</html>
